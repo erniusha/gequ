@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hi,我的音乐世界</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div class="player">
+		<audio src="" id="audio"></audio>
+		<div class="mini-player">
+			<div class="music-info">
+				<a href="">
+					<img src="./img/1.png" alt="">
+				</a>
+			</div>
+			<div class="info-main">
+				<div class="aa">
+					<p class="music-name">听你喜欢的歌</p>
+					<div class="green"></div>
+				</div>
+				<p class="singer-name"></p>
+				<p class="music-time"></p>
+			</div>
+			<span title="展开播放列表" class="open_list">
+       			<span></span>
+      		</span>
+      		<div class="ci"></div>
+      		<div class="method_down">
+      			<strong title="顺序播放" class="shunxu"></strong>
+      			<strong title="随机播放" class="suiji"></strong>
+      			<strong title="单曲循环" class="danqu"></strong>
+      			<strong title="列表循环" class="liebiao"></strong>
+      		</div>
+      		<div class="music-player">
+      			<div class="up" title="上一首"></div>
+      			<div class="start" title="播放/暂停(P)"></div>
+      			<div class="down" title="下一首"></div>
+      			<div class="method" title="播放模式"></div>
+      			<p class="voice" title="音量调节">
+					<span class="voice-icon"></span>
+					<span class="voice-size">
+						<span class="voice-bar"></span>
+						<span class="voice-op"></span>
+					</span>
+				</p>
+      		</div>
+      		<p class="player-bar">
+				<span class="player-bg-bar"></span>
+				<span class="download-bar"></span>
+				<span class="play-current-bar"></span>
+				<span class="progress-op"></span>
+			</p>
+		</div>
+		<div class="player-list" style="display:none">
+			<div class="tab">
+				<h3>播放列表</h3>
+				<div class="select"></div>
+				<h4>清空列表</h4>
+			</div> 
+			<ul>
+			</ul>
+		</div>
+	</div>
+
+	<script src="./js/jquery-1.11.3.js"></script>
+	<script src="./js/index.js"></script>
+	<!-- // <script src="./js/music.js"></script>
+</body>
+</html>

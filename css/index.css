@@ -1,0 +1,407 @@
+@import url("../css/public.css");
+
+*{
+	font-family: "微软雅黑","宋体","Arail";
+	font-size: 12px;
+}
+/********************************mini-player*************************/
+.player .mini-player{
+	width: 541px;
+	height: 111px;
+	background: #000;
+	position: fixed;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-top: 1px solid #fff;
+}
+.player .mini-player .music-info{
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	padding: 10px;
+	float: left;
+}
+.player .mini-player .music-info img{
+	width: 90px;
+	height: 90px;
+}
+.player .mini-player .info-main{
+	width: 300px;
+	float: left;
+	padding: 10px 0;
+}
+.player .mini-player .info-main .aa{
+	width: 300px;
+	overflow: hidden;
+}
+.player .mini-player .info-main p{
+	display: block;
+	color: #fff;
+	float: left;
+}
+.player .mini-player .info-main .singer-name{
+	margin-top: 10px;
+	width: 300px;
+	color: #999;
+}
+.player .mini-player .info-main .music-time{
+	width: 300px;
+	color: #999;
+}
+.player .mini-player .info-main .green{
+	width: 80px;
+	height: 20px;
+	float: left;
+	margin-left: 24px;
+	background: url("../img/player_bg.png") -453px -55px;
+}
+.player .mini-player .open_list{
+	cursor: pointer;
+	width: 50px;
+	height: 30px;
+	display: block;
+	float: left;
+	margin-left: 40px;
+	background: url("../img/player_bg.png") -155px -97px;
+}
+.player .mini-player .ci{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 7px 4px;
+	background: url("../img/player_bg.png") -452px 0px;
+
+}
+.player .mini-player .music-player{
+	width: 280px;
+	height: 42px;
+	position: absolute;
+	bottom: 24px;
+	right: 20px;
+	z-index: 2;
+}
+.player .mini-player .music-player .up{
+	width: 36px;
+	height: 28px;
+	float: left;
+	margin-top: 7px;
+	background: url("../img/player_bg.png") -76px 0px;
+}
+.player .mini-player .music-player .start{
+	width: 42px;
+	height: 42px;
+	float: left;
+	background: url("../img/player_bg.png") -113px 0px;
+}
+.player .mini-player .music-player .stop{
+	width: 38px;
+	height: 40px;
+	float: left;
+	margin-right: 4px;
+	background: url("../img/player_bg.png") -301px -87px;
+}
+.player .mini-player .music-player .down{
+	width: 36px;
+	height: 28px;
+	float: left;
+	margin-top: 7px;
+	background: url("../img/player_bg.png") -155px 0px;
+}
+.player .mini-player .music-player .method{
+	width: 36px;
+	height: 28px;
+	float: left;
+	margin-top: 7px;
+	background: url("../img/player_bg.png") -225px 0px;
+	z-index: 20;
+}
+.player .mini-player .method_down{
+	background-color: #000;
+    width: 32px;
+    padding: 5px 0;
+    position: absolute;
+    left: 352px;
+    bottom: 34px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 6px RGBA(0,0,0,.42);
+    display: none;
+}
+.player .mini-player .method_down .shunxu{
+	display: block;
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+	background: url("../img/player_bg.png") -294px -36px;
+}
+.player .mini-player .method_down .suiji{
+	display: block;
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+	background: url("../img/player_bg.png") -330px -36px;
+}
+.player .mini-player .method_down .danqu{
+	display: block;
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+	background: url("../img/player_bg.png") -258px -2px;
+}
+.player .mini-player .method_down .liebiao{
+	display: block;
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+	background: url("../img/player_bg.png") -222px -2px;
+}
+.player .mini-player .music-player .voice{
+	display: inline-block;
+    width: 100px;
+    height: 24px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+	
+}
+.player .mini-player .music-player .voice .voice-icon{
+	vertical-align: -7px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+	background: url("../img/player_bg.png") no-repeat -191px -3px;
+}
+.player .mini-player .music-player .voice .voice-icon.voice-none{
+	vertical-align: -7px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+	background: url("../img/player_bg.png") no-repeat -154px -63px;
+}
+.player .mini-player .music-player .voice .voice-icon.voice-none:hover{
+	background: url("../img/player_bg.png") no-repeat -190px -63px;
+}
+.player .mini-player .music-player .voice .voice-size{
+	display: inline-block;
+    height: 11px;
+    width: 71px;
+    position: relative;
+    cursor: pointer;
+    background: url("../img/player_bg.png") no-repeat -291px -11px;
+}
+.player .mini-player .music-player .voice .voice-size.moving .voice-bar{
+	background: url("../img/player_bg.png") no-repeat -285px -22px;
+}
+.player .mini-player .music-player .voice .voice-size.moving .voice-op{
+	background: url("../img/player_bg.png") no-repeat -366px -16px;
+}
+.player .mini-player .music-player .voice .voice-size .voice-bar{
+	display: inline-block;
+    height: 11px;
+    width: 71px;
+    position: absolute;
+    background: url("../img/player_bg.png") no-repeat -291px 0;
+}
+.player .mini-player .music-player .voice .voice-size .voice-op{
+	width: 6px;
+    height: 11px;
+    left: 71px;
+    position: absolute;
+    top: 0;
+    background: url("../img/player_bg.png") no-repeat -366px 0;
+}
+.player .mini-player .music-player .up:hover{
+	background: url("../img/player_bg.png") -76px -32px;
+}
+.player .mini-player .music-player .start:hover{
+	background: url("../img/player_bg.png") -113px -42px;
+}
+.player .mini-player .music-player .stop:hover{
+	background: url("../img/player_bg.png") -343px -87px;
+}
+.player .mini-player .music-player .down:hover{
+	background: url("../img/player_bg.png") -155px -32px;
+}
+.player .mini-player .music-player .method:hover{
+	background: url("../img/player_bg.png") -225px -32px;
+}
+.player .mini-player .music-player .voice .voice-icon:hover{
+	background: url("../img/player_bg.png") -191px -34px;
+}
+.player .mini-player .player-bar{
+	width: 541px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.player .mini-player .player-bar .player-bg-bar{
+	width: 100%;
+    background: #323232;
+    font-size: 0;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.player .mini-player .player-bar .download-bar{
+	background: #2c4838;
+    font-size: 0;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.player .mini-player .player-bar .play-current-bar{
+	position: absolute;
+    background: #0cc65b;
+    font-size: 0;
+    display: block;
+    height: 4px;
+    z-index: 3;
+    cursor: pointer;
+}
+.player .mini-player .player-bar .progress-op{
+	display: block;
+    width: 7px;
+    height: 6px;
+    background: url("../img/progress_op.png") no-repeat -1px 0px;
+    position: absolute;
+    z-index: 3;
+    top: -1px;
+    cursor: pointer;
+}
+/********************************player-list*************************/
+.player .player-list{
+	width: 541px;
+	height: 455px;
+	background: #1F1F1F;
+	position: fixed;
+	bottom: 132px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 3;
+}
+.player .player-list .tab{
+	height: 50px;
+	width: 541px;
+	background: #000;
+}
+.player .player-list h3{
+	color: #fff;
+	height: 50px;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 50px;
+	margin-left: 20px;
+	display: block;
+	float: left;
+}
+.player .player-list h4{
+	color: #fff;
+	height: 50px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 50px;
+	margin-right: 8px;
+	display: block;
+	float: right;
+	text-align: right;
+	cursor: pointer;
+}
+.player .player-list .select{
+	width: 20px;
+	height: 20px;
+	background: red;
+	float: right;
+	margin-right: 10px;
+	background: url("../img/player_bg.png") -270px -95px;
+}
+.player .player-list ul{
+	width: 541px;
+}
+.player .player-list ul li{
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	position: relative;
+}
+.player .player-list ul li:hover{
+	color: #fff;
+	background: #000;
+}
+.player .player-list ul li:hover .opraction{
+	display: block;
+}
+.player .player-list ul li.playing{
+	color: #17DE08;
+	background: #000;
+}
+.player .player-list ul li.playing:hover{
+	color: #17DE08;
+	background: #000;
+}
+.player .player-list ul li span{
+	margin-left: 20px;
+	display: block;
+}
+.player .player-list .song{
+	float: left;
+	width: 220px;
+}
+.player .player-list .songer{
+	float: left;
+	width: 151px;
+}
+.player .player-list .time{
+	float: left;
+	width: 40px;
+	padding-left:40px; 
+}
+.player .player-list ul li .opraction{
+	width:120px;
+	height: 40px;
+	background: #000;
+	position: absolute;
+	top:0;
+	right: 0;
+	display: none;
+}
+.player .player-list ul li .opraction ol li{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 12px 3px;
+}
+.player .player-list ul li .opraction ol .like{
+	background: url("../img/player_bg.png") 0px -125px;
+}
+.player .player-list ul li .opraction ol .share{
+	background: url("../img/player_bg.png") -17px -125px;
+}
+.player .player-list ul li .opraction ol .star{
+	background: url("../img/player_bg.png") -66px -125px;
+}
+.player .player-list ul li .opraction ol .delate{
+	background: url("../img/player_bg.png") -48px -124px;
+}
+.player .player-list ul li .opraction ol .like:hover{
+	background: url("../img/player_bg.png") 0px -142px;
+}
+.player .player-list ul li .opraction ol .share:hover{
+	background: url("../img/player_bg.png") -17px -142px;
+}
+.player .player-list ul li .opraction ol .star:hover{
+	background: url("../img/player_bg.png") -66px -142px;
+}
+.player .player-list ul li .opraction ol .delate:hover{
+	background: url("../img/player_bg.png") -48px -142px;
+}
